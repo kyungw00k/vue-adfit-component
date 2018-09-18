@@ -1,0 +1,27 @@
+{
+  "non-interactive": true,
+  "increment": "conventional:angular",
+  "beforeChangelogCommand": "$(npm bin)/conventional-changelog -p angular -i CHANGELOG.md -s",
+  "changelogCommand": "$(npm bin)/conventional-changelog -p angular | tail -n +3",
+  "safeBump": false,
+  "buildCommand": "npm run pack && git add dist/",
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": true,
+    "releaseName": "v%s",
+    "preRelease": true,
+    "assets": "dist/*.js"
+  },
+  "prompt": {
+    "src": {
+      "release": true,
+      "publish": false
+    }
+  },
+  "src": {
+    "tagName": "v%s",
+    "commitMessage": "chore: Release %s"
+  }
+}
