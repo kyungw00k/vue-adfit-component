@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <adfit-banner
-      ad-test="Y"
-      ad-unit="05d24"
+      ad-test="N"
+      ad-unit="DAN-qec5f2maqlpi"
       v-on:ad-loaded="adLoaded"
       v-on:ad-failed="adFailed"
     />
