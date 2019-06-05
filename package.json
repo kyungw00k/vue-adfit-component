@@ -1,7 +1,7 @@
 {
   "name": "vue-adfit-component",
   "description": "Vue.js AdFit Component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Kyungwook Park <parksama@gmail.com>",
   "license": "MIT",
   "private": false,
