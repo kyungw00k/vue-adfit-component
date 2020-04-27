@@ -70,6 +70,7 @@
 
         vm.$el.setAttribute('data-ad-onfail', `adfit-${instanceId}-onfail`)
 
+        // eslint-disable-next-line no-useless-catch
         try {
           window['adfit'].render(vm.$el)
         } catch (ex) {
@@ -79,6 +80,7 @@
     },
 
     beforeDestroy () {
+      // eslint-disable-next-line no-useless-catch
       try {
         window['adfit'].destroy(this.adUnit)
       } catch (ex) {
