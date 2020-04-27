@@ -15,7 +15,7 @@
     if (typeof window['adfit'] === 'function') {
       return Promise.resolve()
     } else {
-      return loadScript('//t1.daumcdn.net/adfit/static/ad.min.js')
+      return loadScript('https://t1.daumcdn.net/kas/static/ba.min.js')
     }
   }
 
